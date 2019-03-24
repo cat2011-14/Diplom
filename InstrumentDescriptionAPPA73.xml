@@ -1,0 +1,332 @@
+﻿<?xml version="1.0"?>
+<id:InstrumentDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:hc="urn:IEEE-1671:2010:HardwareCommon" xmlns:std="urn:IEEE-1641:2010:STDBSC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:tsf="urn:IEEE-1641:2010:STDTSFLib" name="Мультиметр Fluke 287 и 289" type="Instrument" uuid="d71ff46e-a863-4382-a709-4cb6b1d8932d"  xmlns:id="urn:IEEE-1671.2:2009.03:InstrumentDescription">
+  <c:Description>Цифровой мультиметр</c:Description>
+  <c:Identification>
+    <c:ModelName>APPA-73</c:ModelName>
+    <c:IdentificationNumbers>
+      <c:ManufacturerIdentificationNumber number="73" type="Part" manufacturerName="APPA" />
+    </c:IdentificationNumbers>
+    <c:Manufacturers>
+      <c:Manufacturer name="APPA" />
+    </c:Manufacturers>
+  </c:Identification>
+  <hc:Interface>
+    <c:Ports>
+      <c:Port name="Cx" direction="Input" type="Analog">
+        <c:ConnectorPins>
+          <c:ConnectorPin connectorID="Cx1" pinID="0" />
+          <c:ConnectorPin connectorID="Cx2" pinID="0" />
+        </c:ConnectorPins>
+      </c:Port>
+      <c:Port name="CAT IV 600V/CAT III 1000V" direction="Input" type="Analog">
+        <c:ConnectorPins>
+          <c:ConnectorPin connectorID="VOHZ" pinID="0" />
+          <c:ConnectorPin connectorID="COM" pinID="0" />
+        </c:ConnectorPins>
+     </c:Port>
+      <c:Port name="10A MAX/FUSED" direction="Input" type="Analog">
+        <c:ConnectorPins>
+          <c:ConnectorPin connectorID="A" pinID="0" />
+          <c:ConnectorPin connectorID="COM" pinID="0" />
+        </c:ConnectorPins>
+      </c:Port>
+    </c:Ports>
+    <c:Connectors>
+      <c:Connector ID="Cx1" location="Front" type="probe adapter">
+        <c:Identification>
+          <c:ModelName>probe adapter</c:ModelName>
+        </c:Identification>
+      </c:Connector>
+      <c:Connector ID="Cx2" location="Front" type="probe adapter">
+        <c:Identification>
+          <c:ModelName>probe adapter</c:ModelName>
+        </c:Identification>
+      </c:Connector>
+      <c:Connector ID="VOHZ" location="Front" type="banana">
+        <c:Identification>
+          <c:ModelName>banana</c:ModelName>
+        </c:Identification>
+      </c:Connector>
+      <c:Connector ID="A" location="Front" type="banana">
+        <c:Identification>
+          <c:ModelName>banana</c:ModelName>
+        </c:Identification>
+      </c:Connector>
+      <c:Connector ID="COM" location="Front" type="banana">
+        <c:Identification>
+          <c:ModelName>banana</c:ModelName>
+        </c:Identification>
+      </c:Connector>
+    </c:Connectors>
+  </hc:Interface>
+  <hc:NetworkList>
+    <hc:Network>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="R"]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/hc:Interface/c:Ports/c:Port[@name="CAT IV 600V/CAT III 1000V"]</hc:Path>
+      </hc:Node>
+    </hc:Network>
+    <hc:Network>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="C"]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/hc:Interface/c:Ports/c:Port[@name="Cx"]</hc:Path>
+      </hc:Node>
+    </hc:Network>
+<hc:Network>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="HZ"]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/hc:Interface/c:Ports/c:Port[@name="CAT IV 600V/CAT III 1000V"]</hc:Path>
+      </hc:Node>
+    </hc:Network>
+    <hc:Network>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="V="]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="V~"]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/hc:Interface/c:Ports/c:Port[@name="CAT IV 600V/CAT III 1000V"]</hc:Path>
+      </hc:Node>
+    </hc:Network>
+    <hc:Network>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="I="]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="I~"]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+      </hc:Node>
+      <hc:Node>
+        <hc:Path>/id:InstrumentDescription/hc:Interface/c:Ports/c:Port[@name="10A MAX/FUSED"]</hc:Path>
+      </hc:Node>
+    </hc:Network>
+  </hc:NetworkList>
+  <id:Specifications>
+    <hc:Specification xsi:type="hc:Nominal" name="start-stop latency">
+      <hc:Description>Start to Stop Latency</hc:Description>
+      <hc:Definition>
+        <hc:Text>Some spec</hc:Text>
+      </hc:Definition>
+      <hc:Limits>
+        <hc:Limit name="Delay">
+          <c:Expected comparator="EQ">
+            <c:Datum xsi:type="c:double" standardUnit="s" value="3" />
+          </c:Expected>
+        </hc:Limit>
+      </hc:Limits>
+    </hc:Specification>
+  </id:Specifications>
+  <id:Resources>
+    <hc:Resource name="R">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+    <hc:Resource name="C">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+<hc:Resource name="HZ">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+    <hc:Resource name="V=">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+    <hc:Resource name="V~">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+    <hc:Resource name="I=">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+          <c:Port name="mIn" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+    <hc:Resource name="I~">
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="In" direction="Input" />
+          <c:Port name="mIn" direction="Input" />
+        </c:Ports>
+      </hc:Interface>
+    </hc:Resource>
+  </id:Resources>
+  <id:Capabilities>
+    <hc:Capability name="Meas_Cap_2W">
+      <hc:Description>Измерение емкости двухполюсника</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Cin" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Cap_2W" In="Cin" Out="Meas_CDC">
+          <tsf:DC_SIGNAL name="CDC" type="Capacitance" dc_ampl="range 0 nF to 6 mF" />
+          <std:Instantaneous name="Meas_CDC" As="CDC" In="Cin" nominal="range 0 nF to 6 nF errlmt ± 1 % errlmt ± 8 pF res 1 pF                                      range 0 nF to 60 nF errlmt ± 1 % errlmt ± 80 pF res 10 pF                                      range 0 nF to 600 nF errlmt ± 1 % errlmt ± 800 pF res 100 pF                                      range 0 nF to 6 mkF errlmt ± 1 % errlmt ± 8 nF res 1 nF                                      range 0 nF to 60 mkF errlmt ± 1 % errlmt ± 80 nF res 10 nF                    range 0 nF to 600 mkF errlmt ± 1 % errlmt ± 800 nF res 100 nF                        range 0 nF to 6 mF errlmt ± 1 % errlmt ± 8 mkF res 1 mkF " />
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:Capability name="Meas_Res_2W">
+      <hc:Description>Измерение электрического сопротивления</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Rin" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Res_2W" In="Rin" Out="Meas_RDC">
+          <tsf:DC_SIGNAL name="RDC" type="Resistance" dc_ampl="range 0 Ohm to 60 MOhm" />
+          <std:Instantaneous name="Meas_RDC" As="RDC" In="Rin" nominal="range 0 Ohm to 600 Ohm errlmt ± 0.07 % errlmt ± 0.2 Ohm res 0.1 Ohm                                      range 0 Ohm to 6 kOhm errlmt ± 0.07 % errlmt ± 2 Ohm res 1 Ohm                                      range 0 kOhm to 60 kOhm errlmt ± 0.07 % errlmt ± 20 Ohm res 10 Ohm                                      range 0 kOhm to 600 kOhm errlmt ± 0.07 % errlmt ± 200 Ohm res 100 Ohm                                      range 0 kOhm to 6 MOhm errlmt ± 0.10 % errlmt ± 2 kOhm res 1 kOhm                                      range 0 MOhm to 60 MOhm errlmt ± 0.15 % errlmt ± 20 kOhm res 10 kOhm "/>
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:Capability name="Meas_Volt_DC">
+      <hc:Description>Измерение напряжения постоянного тока</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Vin" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Volt_DC" In="Vin" Out="Meas_VDC">
+          <tsf:DC_SIGNAL name="VDC" type="Voltage" dc_ampl="range 0 V to 1000 V" />
+          <std:Instantaneous name="Meas_VDC" As="VDC" In="Vin" nominal="range 0 V to 600 mV errlmt ± 0.05 % errlmt ± 0.2 mV res 0.1 mV                                        range 0 V to 6 V errlmt ± 0.05 % errlmt ± 2 mV res 1 mV                                        range 0 V to 60 V errlmt ± 0.05 % errlmt ± 20 mV res 10 mV                                        range 0 V to 600 V errlmt ± 0.05 % errlmt ± 200 mV res 100 mV               range 0 V to 1000 V errlmt ± 0.05% errlmt ± 2 B res 1 B " />
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:Capability name="Meas_Cur_DC">
+      <hc:Description>Измерение постоянного тока (А)</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Ain" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Cur_DC" In="mIin" Out="Meas_mIDC">
+          <tsf:DC_SIGNAL name="mIDC" type="Current" dc_ampl="range 0 mA to 6000 mkA" />
+          <std:Instantaneous name="Meas_mIDC" As="mIDC" In="mIin" nominal="range 0 mA to 600 mkA errlmt ± 0.1 % errlmt ± 0.2 mkA res 0.1 mkA                                      range 0 mA to 6000 mkA errlmt ± 0.1 % errlmt ± 2 mkA res 1 mkA                 range 0 mA to 6 A errlmt ± 0.1 % errlmt ± 2 mA res 1 mA                    range 0 mA to 10 A errlmt ± 0.1 % errlmt ± 20 mA res 10 mA" />
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:Capability name="Meas_Volt_AC">
+      <hc:Description>Измерение напряжения переменного тока</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Vin" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Volt_AC" In="Vin_AC" Out="Meas_VAC">
+          <tsf:AC_SIGNAL name="VAC_40Hz_400Hz" type="Voltage" freq="range 50 Hz to 500 kHz" ac_ampl="trms 0 V range 0 V to 750 V" />
+          <std:RMS name="Meas_VAC" In="Vin_AC" As="VAC_50Hz_500Hz" nominal="range 0 V to 600 mV errlmt ± 0.9 % errlmt ± 0.5 mV res 0.1 mV                               range 0 V to 6 V errlmt ± 0.9 % errlmt ± 5 mV res 1 mV                               range 0 V to 60 V errlmt ± 0.9 % errlmt ± 50 mV res 10 mV                               range 0 V to 600 V errlmt ± 0.9 % errlmt ± 500 mV res 100 mV               range 0 V to 750 V errlmt ± 0.9 % errlmt ± 5 B res 1 B" />
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:Capability name="Meas_Cur_AC_A">
+      <hc:Description>Измерение переменного тока</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Ain" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Cur_AC_A" In="Iin_AC" Out="Meas_IAC">
+          <tsf:AC_SIGNAL name="IAC_50Hz_500Hz" type="Current" freq="range 50 Hz to 500 Hz" ac_ampl="trms 0 V range 0 A to 10 A" />
+          <std:RMS name="Meas_IAC" In="Iin_AC" As="IAC_50Hz_500Hz" nominal="range 0 A to 600 mkA errlmt ± 0.15 % errlmt ± 0.5 mkA res 0.1 mkA                    range 0 A to 6000 mkA errlmt ± 0.15 % errlmt ± 5 mkA res 1 mkA              range 0 mA to 6 A errlmt ± 0.15 % errlmt ± 5 mA res 1 mA                     range 0 mA to 10 A errlmt ± 0.15 % errlmt ± 50 mA res 10 mA" />
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:Capability name="Meas_Res_Q">
+      <hc:Description>Измерение частоты</hc:Description>
+      <hc:Interface>
+        <c:Ports>
+          <c:Port name="Qin" />
+        </c:Ports>
+      </hc:Interface>
+      <hc:SignalDescription>
+        <std:Signal name="Res_Q" In="Qin" Out="Meas_QDC">
+          <tsf:DC_SIGNAL name="QDC" type="Resistance" dc_ampl="range 0 Hz to 60 MHz" />
+          <std:Instantaneous name="Meas_QDC" As="QDC" In="Qin" nominal="range 0 Hz to 6000 Hz errlmt ± 0.01 % errlmt ± 1 Hz res 1 Hz                                     range 0 Hz to 60 kHz errlmt ± 0.01 % errlmt ± 10 Hz res 10 Hz                                       range 0 Hz to 600 kHz errlmt ± 0.01 % errlmt ± 100 Hz res 100 kHz                                       range 0 Hz to 6 MHz errlmt ± 0.01 % errlmt ± 1 kHz res 1 kHz                                      range 0 Hz to 60 MHz errlmt ± 0.01 % errlmt ± 10 kHz res 10 kHz                     "/>
+        </std:Signal>
+      </hc:SignalDescription>
+    </hc:Capability>
+    <hc:CapabilityMap>
+      <hc:Mapping>
+        <hc:Map>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Capabilities/hc:Capability[@name="Meas_Res_2W"]/hc:Interface/c:Ports/c:Port[@name="Rin"]</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name="R"]/hc:Interface/c:Ports/c:Port[@name="In"]</hc:Path>
+          </hc:Node>
+        </hc:Map>
+        <hc:Map>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Capabilities/hc:Capability[@name='Meas_Cap_2W']/hc:Interface/c:Ports/c:Port[@name='Cin']</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name='C']/hc:Interface/c:Ports/c:Port[@name='In']</hc:Path>
+          </hc:Node>
+        </hc:Map>
+        <hc:Map>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Capabilities/hc:Capability[@name='Meas_Volt_DC']/hc:Interface/c:Ports/c:Port[@name='Vin']</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name='V=']/hc:Interface/c:Ports/c:Port[@name='In']</hc:Path>
+          </hc:Node>
+        </hc:Map>
+        <hc:Map>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Capabilities/hc:Capability[@name='Meas_Cur_DC']/hc:Interface/c:Ports/c:Port[@name='Ain']</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name='I=']/hc:Interface/c:Ports/c:Port[@name='mIn']</hc:Path>
+          </hc:Node>
+        </hc:Map>
+   
+        <hc:Map>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Capabilities/hc:Capability[@name='Meas_Volt_AC']/hc:Interface/c:Ports/c:Port[@name='Vin']</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name='V~']/hc:Interface/c:Ports/c:Port[@name='In']</hc:Path>
+          </hc:Node>
+        </hc:Map>
+        <hc:Map>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Capabilities/hc:Capability[@name='Meas_Cur_AC']/hc:Interface/c:Ports/c:Port[@name='Ain']</hc:Path>
+          </hc:Node>
+          <hc:Node>
+            <hc:Path>/id:InstrumentDescription/id:Resources/hc:Resource[@name='I~']/hc:Interface/c:Ports/c:Port[@name='mIn']</hc:Path>
+          </hc:Node>
+        </hc:Map>
+        
+      </hc:Mapping>
+    </hc:CapabilityMap>
+  </id:Capabilities>
+</id:InstrumentDescription>
